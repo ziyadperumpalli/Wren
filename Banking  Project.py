@@ -13,18 +13,18 @@ def login(username, password):
                 def deposite(self, deposite_amount):
                     print("deposited amount is", deposite_amount)
                     self.balance = self.balance + deposite_amount
-                    print("your current balance account = ", self.balance)
+                    print("your current account balance = ", self.balance)
 
                 def withdrawal(self, withdrawal_amount):
                     if withdrawal_amount > self.balance:
-                        print("insufficient balance")
+                        print("insufficient fund")
                     else:
                         print("withdrawal amount is", withdrawal_amount)
                         self.balance = self.balance - withdrawal_amount
-                        print("your current balance amount = ", self.balance)
+                        print("your current account balance = ", self.balance)
 
                 def balance_enquiry(self):
-                    print("Balance=", self.balance)
+                    print("Your Account Balance=", self.balance)
 
             obj1 = Bankaccount()
             userinput = int(input("Press 1 For Balance enquiry \nPress 2 For Deposit  \nPress 3 For Withdrawal\n"))
